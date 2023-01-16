@@ -9,3 +9,14 @@ h1 {
   padding: .5em;
   font-size: medium;
 }
+
+p {
+  font-family: Verdana;
+  letter-spacing: 2px;
+}
+
+.form {
+  display: grid;
+  justify-content: center;
+  padding: 2em;
+}
