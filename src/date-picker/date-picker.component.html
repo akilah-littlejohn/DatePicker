@@ -1,3 +1,4 @@
+<h1>Choose Appointment Date</h1>
 <mat-form-field>
 <mat-label>Choose a date</mat-label>
 <input matInput [matDatepicker]="picker" [formControl]="selectedDate">
@@ -5,5 +6,7 @@
 <mat-datepicker #picker></mat-datepicker>
 
 </mat-form-field>
+
+section
 
 <p>You selected: {{ selectedDate.value | date }}</p>
