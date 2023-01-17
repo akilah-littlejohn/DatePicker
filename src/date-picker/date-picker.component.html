@@ -1,10 +1,17 @@
-<h1 class="center-elements">Choose Appointment Date</h1>
+<div [ngSwitch]="submitted">
+  <h1 class="center-elements" *ngSwitchCase="true">Your Appointment Date</h1>
+  <h1 class="center-elements" *ngSwitchDefault>Choose Your Appointment Date</h1>
+</div>
+
 <main class="center-elements">
-  <form *ngIf="!submitted"
+  <form
+    *ngIf="!submitted"
     #f="ngForm"
     (ngSubmit)="
       submitAppointment(
-    f.controls.date.value, 'fff', 'fff'
+        f.controls.date.value,
+        f.controls.service_type.value,
+        f.controls.special_request.value
       )
     "
   >
@@ -38,5 +45,4 @@
       Submit
     </button>
   </form>
- 
 </main>

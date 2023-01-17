@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appointment.component.css']
 })
 export class AppointmentComponent implements OnInit {
-
+   submittedDate
+   submittedServiceType
+   submittedSpecialRequest
+   appointPageTitle:string;
+   
   constructor() { }
 
   ngOnInit() {
   }
+
+ 
 
 }
