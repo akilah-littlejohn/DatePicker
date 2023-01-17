@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-appointment',
@@ -6,11 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./appointment.component.css']
 })
 export class AppointmentComponent implements OnInit {
-   submittedDate
+   @Input() submittedDate
    submittedServiceType
    submittedSpecialRequest
    appointPageTitle:string;
-   
+
   constructor() { }
 
   ngOnInit() {

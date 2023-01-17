@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import {MatSelectModule} from '@angular/material/select';
+import { MatSelectModule } from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -10,6 +10,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AppComponent } from './app.component';
 import { DatePickerComponent } from '../date-picker/date-picker.component';
+import { AppointmentComponent } from './appointment/appointment.component';
 
 @NgModule({
   imports: [
@@ -22,10 +23,9 @@ import { DatePickerComponent } from '../date-picker/date-picker.component';
     MatInputModule,
     MatNativeDateModule,
     MatSelectModule,
-    MatButtonModule
-  
+    MatButtonModule,
   ],
-  declarations: [AppComponent, DatePickerComponent],
+  declarations: [AppComponent, DatePickerComponent, AppointmentComponent],
   bootstrap: [AppComponent],
 })
 export class AppModule {}

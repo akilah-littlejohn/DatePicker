@@ -45,4 +45,5 @@
       Submit
     </button>
   </form>
+  <app-appointment *ngIf="submitted" [submittedDate]="this.date"></app-appointment>
 </main>
