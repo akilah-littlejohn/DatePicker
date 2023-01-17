@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { FormControl } from '@angular/forms';
 
 @Component({
@@ -8,9 +8,9 @@ import { FormControl } from '@angular/forms';
 })
 export class DatePickerComponent implements OnInit {
   submitted: boolean;
-  @Input() date: Date;
-  @Input() serviceType: string;
-  @Input() specialRequest;
+  date: Date;
+  serviceType: string;
+  specialRequest;
 
   service_type;
   special_request;
