@@ -10,7 +10,7 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AppComponent } from './app.component';
 import { DatePickerComponent } from '../date-picker/date-picker.component';
-import { ConfirmationComponent } from './confirmation/confirmation.component';
+import { ConfirmationComponent } from '../confirmation/confirmation.component';
 
 @NgModule({
   imports: [
