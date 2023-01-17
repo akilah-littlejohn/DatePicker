@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
+import {MatSelectModule} from '@angular/material/select';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
@@ -20,6 +20,7 @@ import { DatePickerComponent } from '../date-picker/date-picker.component';
     MatFormFieldModule,
     MatInputModule,
     MatNativeDateModule,
+    MatSelectModule
   
   ],
   declarations: [AppComponent, DatePickerComponent],
