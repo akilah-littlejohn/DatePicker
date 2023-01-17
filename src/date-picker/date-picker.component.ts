@@ -8,11 +8,13 @@ import {  FormsModule, FormControl} from '@angular/forms';
 })
 export class DatePickerComponent implements OnInit {
 
-  constructor() {}
+  constructor() {
+ 
+  }
   selectedDate = new FormControl(new Date());
   
   ngOnInit() {}
   log(value) {
-    console.log(value);
+    console.log(value)
   }
 }

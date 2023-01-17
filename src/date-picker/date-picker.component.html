@@ -14,19 +14,17 @@
     </mat-form-field>
     <mat-form-field appearance="fill">
       <mat-label>Select</mat-label>
-      <mat-select>
-        <mat-option name="service_type" value="one" ngModel
+      <mat-select name="service_type" ngModel>
+        <mat-option name="service_type" value="PonyTail" ngModel
           >PonyTail</mat-option
         >
-        <mat-option value="two" ngModel>Curls</mat-option>
+        <mat-option value="Curls" ngModel>Curls</mat-option>
       </mat-select>
     </mat-form-field>
-    <mat-form-field name="special_request" appearance="fill" ngModel>
+    <mat-form-field appearance="fill">
       <mat-label>Textarea</mat-label>
-      <textarea matInput></textarea>
+      <textarea matInput name="special_request" ngModel></textarea>
     </mat-form-field>
-    <button mat-button (click)="log(this.f.value)">submit</button>
+    <button mat-button mat-raised-button color="primary">Submit</button>
   </form>
-
-  <p class="form">You selected: {{ this.f.controls.date.value | date }}</p>
 </main>
