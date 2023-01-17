@@ -2,3 +2,8 @@
 /* Add application styles & imports to this file! */
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 
+*, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
