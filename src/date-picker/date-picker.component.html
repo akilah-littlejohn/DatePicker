@@ -45,5 +45,5 @@
       Submit
     </button>
   </form>
-  <app-confirmation [confirmed_date]="date"></app-confirmation>
+  <app-confirmation *ngIf="submitted"[confirmed_date]="date"></app-confirmation>
 </main>

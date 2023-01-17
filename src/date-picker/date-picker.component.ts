@@ -19,19 +19,12 @@ export class DatePickerComponent implements OnInit {
   selectedDate = new FormControl(new Date());
 
   ngOnInit() {}
-  log(value) {
-    console.log(value);
-  }
-
+ 
   submitAppointment(_date: Date, _service: string, _request: string) {
     this.submitted = true;
     this.date = _date;
     this.serviceType = _service;
     this.specialRequest = _request;
   }
-  setAppointmentTitle() {
-    let pageTitle = this.submitted
-      ? 'Choose Appointment Date'
-      : ' Your Appointment Date';
-  }
+
 }
