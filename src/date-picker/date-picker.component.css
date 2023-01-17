@@ -1,7 +1,5 @@
 h1 {
-  display: grid;
   letter-spacing: 2px;
-  justify-content: center;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #fff;
   background-color: blueviolet;
@@ -13,10 +11,22 @@ h1 {
 p {
   font-family: Verdana;
   letter-spacing: 2px;
+  background-color:#eee;
+  margin: 1em;
+  width: 300px;
+  height: 300px;
 }
 
-.form {
+main {
+display: flex;
+justify-content: center;
+}
+form {
   display: grid;
   justify-content: center;
   padding: 2em;
+}
+.center-elements{
+  display: flex;
+  justify-content: center;
 }
