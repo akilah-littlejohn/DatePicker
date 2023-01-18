@@ -7,3 +7,8 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+p, h1, h3 {
+  font-family: Verdana;
+  letter-spacing: 2px;
+}
