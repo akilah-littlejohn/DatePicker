@@ -6,12 +6,12 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 import { MatNativeDateModule } from '@angular/material/core';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AppComponent } from './app.component';
 import { DatePickerComponent } from '../date-picker/date-picker.component';
 import { ConfirmationComponent } from '../confirmation/confirmation.component';
-import { MatIconModule } from '@angular/material/icon';
 
 @NgModule({
   imports: [
