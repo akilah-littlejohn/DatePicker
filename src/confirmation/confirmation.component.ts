@@ -8,7 +8,7 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ConfirmationComponent implements OnInit {
   @Input() confirmed_date: Date;
   @Input() confirmed_serviceType: string;
-  @Input() confiremed_specialRequest;
+  @Input() confirmed_specialRequest;
   
   constructor() { }
 
