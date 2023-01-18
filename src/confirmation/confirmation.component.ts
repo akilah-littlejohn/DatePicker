@@ -8,8 +8,8 @@ import { Component, OnInit, Input } from '@angular/core';
 export class ConfirmationComponent implements OnInit {
   @Input() confirmed_date: Date;
   @Input() confirmed_serviceType: string;
-  @Input() confirmed_specialRequest;
-  
+  @Input() confirmed_specialRequest:string;
+  @Input() resubmit:boolean
   constructor() { }
 
   ngOnInit() {
