@@ -1,11 +1,14 @@
 <section class="container">
-  <h1 class="center-elements">Thank You!</h1>
-  <p>
+
+    <h1 class="container">Thank You!</h1>
+    <mat-icon class="icon">check_circle</mat-icon>
+
+  <p class="text">
     Your {{ confirmed_serviceType }} appointment for
     {{ confirmed_date | date }} has been confirmed!
   </p>
 
-  <h3>Special Request:</h3>
+  <h3 class="container">Special Request:</h3>
   <p class="text-box">{{ confirmed_specialRequest }}</p>
 
   <button
