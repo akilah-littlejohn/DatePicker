@@ -5,7 +5,7 @@
 
 <main  class="center-elements">
   <form
-    *ngIf="!submitted"
+   
     #f="ngForm"
     (ngSubmit)="
       submitAppointment(
@@ -45,13 +45,15 @@
     <button type="submit" mat-button mat-raised-button color="primary">
       Submit
     </button>
+
   </form>
- 
+{{ this.submitted}}
   <app-confirmation
     *ngIf="submitted"
     [confirmed_date]="date"
     [confirmed_serviceType]="serviceType"
     [confirmed_specialRequest]="specialRequest"
+    [f]="this.f"
     [resubmit]="submitted"
 
     (resubmitAppointment)="submitted = $event"

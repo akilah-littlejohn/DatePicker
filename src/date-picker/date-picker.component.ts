@@ -10,12 +10,12 @@ export class DatePickerComponent implements OnInit {
   submitted: boolean;
   date: Date;
   serviceType: string;
-  specialRequest;
-
+   specialRequest;
   service_type;
   special_request;
   
-  constructor() {}
+  constructor() {
+  }
   selectedDate = new FormControl(new Date());
 
   ngOnInit() {
