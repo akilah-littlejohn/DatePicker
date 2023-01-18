@@ -1,6 +1,5 @@
 <section class="container">
   <h1 class="center-elements">Thank You!</h1>
-  <mat-icon class="icon">check</mat-icon>
   <p>
     Your {{ confirmed_serviceType }} appointment for
     {{ confirmed_date | date }} has been confirmed!
@@ -15,6 +14,7 @@
     mat-raised-button
     color="primary"
     [(ngModel)]="resubmit"
+    name="resubmit"
     (click)="appointmentSubmission(resubmit)"
   >
     Make Another Appointment

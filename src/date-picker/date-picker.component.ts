@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
+import { FormControl, NgForm } from '@angular/forms';
 
 @Component({
   selector: 'app-date-picker',
@@ -14,11 +14,12 @@ export class DatePickerComponent implements OnInit {
 
   service_type;
   special_request;
-
+  
   constructor() {}
   selectedDate = new FormControl(new Date());
 
   ngOnInit() {
+   
   }
  
   submitAppointment(_date: Date, _service: string, _request: string) {
@@ -27,10 +28,9 @@ export class DatePickerComponent implements OnInit {
     this.serviceType = _service;
     this.specialRequest = _request;
   }
-resetAppointmentInputs(){
+resetAppointmentInputs(f: NgForm){
   if(!this.submitted){
-
-
+   f.reset()
   }
 }
 }
