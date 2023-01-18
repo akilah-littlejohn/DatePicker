@@ -10,16 +10,9 @@ h1 {
   font-size: medium;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
 form {
   display: grid;
   justify-content: center;
   padding: 2em;
 }
-.center-elements {
-  display: flex;
-  justify-content: center;
-}
+

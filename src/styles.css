@@ -12,3 +12,8 @@ p, h1, h3 {
   font-family: Verdana;
   letter-spacing: 2px;
 }
+
+.center-elements {
+  display: flex;
+  justify-content: center;
+}
