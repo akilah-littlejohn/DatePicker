@@ -51,5 +51,8 @@
     [confirmed_date]="date"
     [confirmed_serviceType]="serviceType"
     [confirmed_specialRequest]="specialRequest"
+    [resubmit]="submitted"
+    (resubmitAppointment)="submitted = $event"
+
   ></app-confirmation>
 </main>

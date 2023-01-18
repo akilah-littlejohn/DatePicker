@@ -1,16 +1,23 @@
 <section class="container">
-<h1 class="center-elements">Thank You!</h1>
-<mat-icon class="icon">check</mat-icon>
-<p>
-  Your {{ confirmed_serviceType }} appointment for {{ confirmed_date | date }} has been
-  confirmed!
-</p>
+  <h1 class="center-elements">Thank You!</h1>
+  <mat-icon class="icon">check</mat-icon>
+  <p>
+    Your {{ confirmed_serviceType }} appointment for
+    {{ confirmed_date | date }} has been confirmed!
+  </p>
 
-<h3>Special Request:</h3>
-<p class="text-box"> {{ confirmed_specialRequest }}</p>
+  <h3>Special Request:</h3>
+  <p class="text-box">{{ confirmed_specialRequest }}</p>
 
-<button type="button" mat-button mat-raised-button color="primary">
-Make Another Appointment
-</button>
+  <button
+    type="button"
+    mat-button
+    mat-raised-button
+    color="primary"
+    [(ngModel)]="resubmit"
+    (click)="appointmentSubmission(resubmit)"
+  >
+    Make Another Appointment
+  </button>
 
 </section>

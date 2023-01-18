@@ -1,4 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter  } from '@angular/core';
 
 @Component({
   selector: 'app-confirmation',
@@ -10,8 +10,22 @@ export class ConfirmationComponent implements OnInit {
   @Input() confirmed_serviceType: string;
   @Input() confirmed_specialRequest: string;
   @Input() resubmit: boolean;
-  
-  constructor() {}
+  @Output() resubmitAppointment = new EventEmitter<boolean>();
 
-  ngOnInit() {}
+  constructor() {
+
+  }
+
+  ngOnInit() {
+    this.confirmed_date;
+    this.confirmed_serviceType;
+    this.confirmed_specialRequest;
+    this.resubmit
+  }
+
+  appointmentSubmission(value: boolean) {
+    this.resubmit = false;
+    this.resubmitAppointment.emit(this.resubmit);
+
+  }
 }
