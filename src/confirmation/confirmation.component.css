@@ -1,0 +1,10 @@
+h1 {
+  display: flex;
+  align-items: center;
+  margin: .5em;
+  height: 100%
+}
+
+h3 {
+  margin:1em;
+}
