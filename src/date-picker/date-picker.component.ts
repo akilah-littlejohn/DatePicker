@@ -28,9 +28,5 @@ export class DatePickerComponent implements OnInit {
     this.serviceType = _service;
     this.specialRequest = _request;
   }
-resetAppointmentInputs(f: NgForm){
-  if(!this.submitted){
-   f.reset()
-  }
-}
+
 }
