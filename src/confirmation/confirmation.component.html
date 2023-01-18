@@ -1,3 +1,4 @@
+<section class="container">
 <h1 class="center-elements">Thank You!</h1>
 <p>
   Your {{ confirmed_serviceType }} appointment for {{ confirmed_date | date }} has been
@@ -5,4 +6,10 @@
 </p>
 
 <h3>Special Request:</h3>
-<p> {{ confirmed_specialRequest }}</p>
+<p class="text-box"> {{ confirmed_specialRequest }}</p>
+
+<button type="button" mat-button mat-raised-button color="primary">
+Make Another Appointment
+</button>
+
+</section>
