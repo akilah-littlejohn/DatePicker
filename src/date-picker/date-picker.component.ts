@@ -19,7 +19,6 @@ export class DatePickerComponent implements OnInit {
   selectedDate = new FormControl(new Date());
 
   ngOnInit() {
-    this.resetAppointmentInputs()
   }
  
   submitAppointment(_date: Date, _service: string, _request: string) {
@@ -30,9 +29,7 @@ export class DatePickerComponent implements OnInit {
   }
 resetAppointmentInputs(){
   if(!this.submitted){
-    this.date = null;
-    this.serviceType = '';
-    this.specialRequest = '';
+
 
   }
 }
