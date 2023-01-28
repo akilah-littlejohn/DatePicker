@@ -6,6 +6,7 @@ import { DatePickerComponent } from '../date-picker/date-picker.component';
 const routes: Routes = [
   { path: '/datepicker', component: DatePickerComponent },
   { path: 'confirmation', component: ConfirmationComponent },
+  { path: '', redirectTo: 'datepicker', pathMatch: 'full' },
 ];
 
 @NgModule({
