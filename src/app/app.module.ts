@@ -12,6 +12,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { AppComponent } from './app.component';
 import { DatePickerComponent } from '../date-picker/date-picker.component';
 import { ConfirmationComponent } from '../confirmation/confirmation.component';
+import { AppRoutingModule } from '../app-routing/app-routing.module';
 
 @NgModule({
   imports: [
@@ -25,7 +26,8 @@ import { ConfirmationComponent } from '../confirmation/confirmation.component';
     MatNativeDateModule,
     MatSelectModule,
     MatButtonModule,
-    MatIconModule
+    MatIconModule,
+    AppRoutingModule
   ],
   declarations: [AppComponent, DatePickerComponent, ConfirmationComponent],
   bootstrap: [AppComponent],
