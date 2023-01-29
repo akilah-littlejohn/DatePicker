@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { NgForm } from '@angular/forms';
+import { SharedDataService } from 'src/shared-data.service';
 
 @Component({
   selector: 'app-confirmation',
@@ -7,25 +7,12 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./confirmation.component.css'],
 })
 export class ConfirmationComponent implements OnInit {
-  @Input() confirmed_date: Date;
-  @Input() confirmed_serviceType: string;
-  @Input() confirmed_specialRequest: string;
-  @Input() resubmit: boolean;
-  @Input() form: NgForm;
-  @Output() resubmitAppointment = new EventEmitter<boolean>();
+  data:FormData
 
-  constructor() {}
+  constructor(private sharedDataService:SharedDataService){}
 
-  ngOnInit() {
-    this.confirmed_date;
-    this.confirmed_serviceType;
-    this.confirmed_specialRequest;
-    this.resubmit;
-  }
-
-  appointmentSubmission(value: boolean) {
-    this.resubmit = false;
-    this.resubmitAppointment.emit(this.resubmit);
-    this.form.reset();
+  ngOnInit(): void {
+    this.data = this.sharedDataService.getData();
+    console.log(this.data)
   }
 }

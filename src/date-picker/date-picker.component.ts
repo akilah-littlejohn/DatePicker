@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { FormControl } from '@angular/forms';
-import { RouteConfigLoadStart, Router } from '@angular/router';
+import {  Router } from '@angular/router';
+import { SharedDataService } from 'src/shared-data.service';
 
 @Component({
   selector: 'app-date-picker',
@@ -9,22 +9,15 @@ import { RouteConfigLoadStart, Router } from '@angular/router';
 })
 export class DatePickerComponent implements OnInit {
   submitted: boolean;
-  date: Date;
-  serviceType: string;
-  specialRequest;
-  service_type;
-  special_request;
 
-  constructor(public route:Router) {}
-  selectedDate = new FormControl(new Date());
+  constructor(public route:Router, private sharedDataService:SharedDataService) {}
 
   ngOnInit() {}
 
-  submitAppointment(_date: Date, _service: string, _request: string) {
-    this.submitted = true;
-    this.date = _date;
-    this.serviceType = _service;
-    this.specialRequest = _request;
-    this.route.navigate(['confirmation'])
+
+  onSubmit(formData:FormData) {
+    console.table(formData)
+    this.sharedDataService.setData(formData);
+    this.route.navigate(['/confirmation']);
   }
 }
